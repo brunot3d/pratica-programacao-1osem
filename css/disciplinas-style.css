@@ -1,0 +1,247 @@
+/*Estilizações Universais*/
+
+.titulos{
+    margin: auto;
+    padding: 0;
+    font-size: 2.5em;
+}
+.marcador{
+    background: #222;
+    width: 180px;
+    color: white;
+    padding: 0;
+    font-size: 1em;
+    margin: 15px 0;
+}
+.marcador span{
+    display: inline-block;
+    border: 4px solid white;
+    position: relative;
+    height: 43px;
+}
+.marcador span:first-child{
+    float: left;
+    width: 20%;
+    font-size: 3em;
+    color: #ffcb47;
+    box-sizing: border-box;
+    border-right: 0px solid white;
+}
+.marcador span:first-child:before{
+    content: ">";
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: -11px;
+    left:5px;
+}
+.marcador span:last-child{
+    margin: 0;
+    width: 80%;
+    line-height: 35px;
+    font-size: 1em;
+    box-sizing: border-box;
+    padding-left: 15px;
+}
+
+.nucleo-especifico{
+    background: #67b9a8;
+    width: 90%;
+    color: black;
+    padding: 15px 0;
+    font-size: 1.3em;
+    margin: 35px auto;
+    text-align: center;
+    border: 4px solid white;
+}
+
+
+
+
+/* <======================== Lado Esquerdo Estilização */
+
+#left_container {
+    background-color: #b85847;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilização header Direito*/
+.conteudo1 {
+    background-color: #b85847;
+    flex: 1;
+    display: flex;
+    position: relative;
+    z-index: 0;
+    
+}
+.conteudo1:after{
+    content:"";
+    background-color: #b85847;
+    position: absolute;
+    background-image: url(../img/img_code_01.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-blend-mode: soft-light;
+    height: 100%;
+    width: 100%;
+    opacity: .4;
+    z-index: -2;
+}
+.th1 {
+    margin: 0;
+    padding: 0;
+    color: #67b9a8;
+    background-color: #ffcb47;
+}
+.th1a {
+    color: black;
+}
+
+.colchete{
+    position: absolute;
+    color: white;
+    font-size: 5em;
+    bottom: 0;
+}
+.colchete-cima{
+    top:0;
+    left: 10%
+}
+.colchete-baixo{
+    bottom:0;
+    right: 15%;
+}
+.retangulo-header{
+    position: absolute;
+    border: 3px solid white;
+    height: 80%;
+    width: 20%;
+    top:8%;
+    left:35%;
+    z-index: -1;
+}
+
+
+/* Estilização Conteudo Direito*/
+.conteudo2 {
+    flex: 2;
+    background-color: #ffcb47;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+/* Lado Direito Estilização ========================> */
+
+#right_container {
+    background-color: #67b9a8;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilização header Esquerdo*/
+.conteudo3{
+    flex:1;
+    display: flex;
+    z-index: 0;
+    position: relative;
+}
+.conteudo3:after{
+    content:"";
+    background-color: #67b9a8;
+    position: absolute;
+    background-image: url(../img/img_code_02.jpg);
+    background-size:cover;
+    background-position:bottom;
+    background-repeat: no-repeat;
+    background-blend-mode: soft-light;
+    height: 100%;
+    width: 100%;
+    opacity: .8;
+    z-index: -2;
+}
+
+
+
+#titulo-si{
+    text-align: right;
+}
+.th2 {
+    color: #67b9a8;
+    background-color: #222;
+}
+
+.th2a {
+    color: white;
+}
+
+
+/* Estilização conteudo Direito*/
+
+.conteudo4 {
+    flex:2;
+    background-color: rgb(56, 66, 65);
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+
+
+/* Estilização das Tabelas */
+
+/* Tabelas CC */
+table.tabelacc {
+    margin: 30px auto;
+    width: 80%;
+    border:3px solid #ca8b3a;
+    box-sizing: border-box;
+    border-collapse: collapse;
+}
+
+tr{
+    height: 30px
+}
+th{
+    font-size: .9em;
+}
+.tabelacc tr:nth-child(odd){
+    background-color:#ca8b3a;
+    color: white;
+}
+.tabelacc td:last-child, th{
+    text-align: center;
+    border-left: 1px solid #ca8b3a;
+}
+.tabelacc caption{
+    border:2px solid #ca8b3a;
+    line-height: 25px;
+}
+
+
+/* Tabelas SI */
+table.tabelasi {
+    margin: 30px auto;
+    width: 80%;
+    border:3px solid #1c85c7;
+    background: #ffcb47;
+    box-sizing: border-box;
+    border-collapse: collapse;
+}
+.tabelasi tr:nth-child(odd){
+    background-color:#1c85c7;
+    color: white;
+}
+.tabelasi td:last-child, th{
+    text-align: center;
+    border-left: 1px solid #1c85c7;
+}
+.tabelasi caption{
+    border:2px solid #1c85c7;
+    line-height: 25px;
+    background: #ffcb47;
+}

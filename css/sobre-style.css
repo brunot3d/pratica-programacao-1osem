@@ -1,0 +1,212 @@
+/*Cores*/
+/*
+amarelo - #ffcb47
+vermelho - #b85847;
+verde claro - #67b9a8
+cinza escuro - #222 ou #333
+azul - #1c85c7
+*/
+
+/*Estilizações universais*/
+body{
+    font-family: "Ubuntu Mono";
+/*
+    font-family: "Space Mono";
+    font-family: "Source Code Pro";
+*/
+}
+
+h1{
+    margin: 0;
+    padding: 0;
+}
+.header-pagina{
+    flex: 1;
+    color:white;
+    display: flex;
+    flex-direction: column;
+}
+.header-content{
+    width: 45%;
+    margin: auto;
+    position: relative;
+    z-index: 0;
+}
+.header-content h1:last-child{
+    text-align: right;
+}
+
+.conteudo-principal{
+    flex: 3;
+    background: #ccc;
+}
+.conteudo{
+    background: #ddd;
+    width: 90%;
+    margin: 15px auto;
+    padding: 5px;
+}
+.highlight-text{
+    margin: 15px auto;
+    font-size: 1.3em;
+    text-align: right;
+}
+.texto-color{
+    color: #ffcb47;
+}
+.text-vermelho{
+    color: #b85847;
+    font-weight: 600;
+}
+.text-azul{
+    color: #1c85c7;
+    font-weight: 600;
+}
+
+strong{
+    font-size: 1.05em;
+}
+
+.retangulo:after{
+    content: "";
+    width: 70px;
+    height: 110px;
+    border: 3px solid white;
+    position: absolute;
+    top: -10%;
+    left: 35%;
+    z-index: -1;
+}
+#right_container .retangulo:after{
+    content: "";
+    width: 70px;
+    height: 110px;
+    border: 3px solid white;
+    position: absolute;
+    top: -10%;
+    left: 30%;
+    z-index: -1;
+}
+.colchete{
+    font-size: 5em;
+}
+
+
+/* <======================== Lado Esquerdo Estilização */
+
+#left_container{
+    display: flex;
+    flex-direction: column;
+    
+}
+#header_cc{
+    background: #222;
+    position: relative;
+    z-index: 0;
+}
+#header_cc:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #333;
+    background-image: url(../img/img_code_04.jpg);
+    background-size: cover;
+    background-blend-mode: soft-light;
+    opacity: .55;
+    z-index: -1;
+}
+
+#cont_cc{
+    overflow: auto;
+}
+#right_container h3{
+    background-color: #ffcb47;
+    padding:5px;
+    border: 3px solid black;
+    text-align:left;
+    font-size:.9em;
+}
+#left_container strong{
+    background: #67b9a8;
+    color: white;
+        
+}
+#left_container h1{
+
+}
+#left_container h1:first-child{
+    background: #67b9a8;
+}
+
+#colchete_left_cima:after{
+    content: "[";
+    position: absolute;
+    top: -15%;
+    left: -25%;
+}
+#colchete_left_baixo:after{
+    content: "]";
+    position: absolute;
+    bottom: -15%;
+    right: -25%;
+}
+
+/* Lado Direito Estilização ========================> */
+
+#right_container{
+    display: flex;
+    flex-direction: column;
+}
+#header_si{
+    background: #1c85c7;
+    position: relative;
+    z-index: 0;
+}
+#header_si:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #1c85c7;
+    background-image: url(../img/img_code_03.jpg);
+    background-position: left;
+    background-size: cover;
+    background-blend-mode: soft-light;
+    opacity: .5;
+    z-index: -1;
+}
+#cont_si{
+    overflow: auto;
+}
+#left_container h3{
+    background-color: #1c85c7;
+    color:white;
+    padding:5px;
+    border: 3px solid black;
+    text-align:left;
+    font-size:.9em;
+}
+#right_container strong{
+    background: #b85847;
+    color: white;
+}
+#right_container h1{
+
+}
+#right_container h1:first-child{
+    background: #b85847;
+}
+
+#colchete_right_cima:after{
+    content: "[";
+    position: absolute;
+    top: -15%;
+    left: -25%;
+}
+#colchete_right_baixo:after{
+    content: "]";
+    position: absolute;
+    bottom: -15%;
+    right: -25%;
+}
